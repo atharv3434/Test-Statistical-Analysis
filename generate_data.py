@@ -1,4 +1,5 @@
-"""Generate synthetic A/B test data with deliberately different outcomes
+"""
+Generate synthetic A/B test data with deliberately different outcomes
 for three metrics, so the analysis has something genuine to find:
 
 - conversion_rate: a real (moderate) treatment effect built in
