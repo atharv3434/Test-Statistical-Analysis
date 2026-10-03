@@ -1,0 +1,31 @@
+# Configuration for the A/B test statistical analysis project.
+
+data_path: data/ab_test_data.csv
+group_col: group
+control_label: control
+treatment_label: treatment
+
+report_path: output/analysis_report.md
+figures_dir: output/figures
+
+alpha: 0.05   # significance threshold, before multiple-testing correction
+multiple_testing_correction: benjamini_hochberg   # "bonferroni", "benjamini_hochberg", or "none"
+
+# Metrics to test, with the right test type for each:
+# - "proportion" -> two-proportion z-test (e.g. conversion rate)
+# - "continuous" -> Welch's t-test (does not assume equal variances)
+metrics:
+  - name: converted
+    type: proportion
+    label: "Conversion rate"
+  - name: revenue
+    type: continuous
+    label: "Revenue per user"
+  - name: page_load_ms
+    type: continuous
+    label: "Page load time (ms)"
+
+# Power analysis: for a future test, what sample size per group would be
+# needed to reliably detect an effect of this relative size, at this power?
+power_target: 0.8
+mde_relative: 0.10   # minimum detectable effect, as a fraction of the control mean/rate
