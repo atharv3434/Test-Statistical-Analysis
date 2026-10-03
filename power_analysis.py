@@ -1,4 +1,5 @@
-"""Power analysis: how many users per group would a *future* test need to
+"""
+Power analysis: how many users per group would a *future* test need to
 reliably detect an effect of a given size?
 
 This answers a different, forward-looking question than the hypothesis
