@@ -1,4 +1,5 @@
-"""Hypothesis tests, effect sizes, and confidence intervals for comparing
+"""
+Hypothesis tests, effect sizes, and confidence intervals for comparing
 two groups in an A/B test.
 
 Two test types are implemented, matched to the kind of metric:
