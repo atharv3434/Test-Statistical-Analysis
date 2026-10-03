@@ -1,4 +1,5 @@
-"""Run the full A/B test analysis: hypothesis tests for every configured
+"""
+Run the full A/B test analysis: hypothesis tests for every configured
 metric, multiple-testing correction, effect sizes with confidence
 intervals, power analysis, and a full markdown report with plots.
 
